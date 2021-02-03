@@ -9,14 +9,11 @@ function angryProfessor(k, a) {
   return "NO";
 }
 
-function main() {
-  const k = 3;
-
-  const a = [-1, -2, 1, 3, 4];
+function main(k, a, res) {
 
   let result = angryProfessor(k, a);
-  if (result === "NO") {
+  if (result === res) {
     console.log("ok");
-  } else if (result === "YES") console.log("not ok");
+  } else if (result !== res) console.log("not ok");
 }
-main();
+main(3, [-1, -2, 1, 3, 4], 'YES');
