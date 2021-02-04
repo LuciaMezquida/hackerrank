@@ -1,19 +1,24 @@
 "use strict";
 
 // Complete the angryProfessor function below.
-function angryProfessor(k, a) {
-  const arrivedStudents = a.filter((student) => student <= 0);
-  if (arrivedStudents.length < k) {
-    return "YES";
+function angryProfessor(studentsThreshold, arrivalTime) {
+  const canceledClass = "YES";
+  const notCanceledClass = "NO";
+
+  const arrivedStudents = arrivalTime.filter((studentTime) => studentTime <= 0);
+  if (arrivedStudents.length < studentsThreshold) {
+    return canceledClass;
   }
-  return "NO";
+  return notCanceledClass;
 }
 
-function main(k, a, res) {
-
-  let result = angryProfessor(k, a);
-  if (result === res) {
+function main(studentsThreshold, arrivalTime, response) {
+  let result = angryProfessor(studentsThreshold, arrivalTime);
+  if (result === response) {
     console.log("ok");
-  } else if (result !== res) console.log("not ok");
+  } else {
+    console.log("not ok");
+  }
 }
-main(3, [-1, -2, 1, 3, 4], 'YES');
+main(3, [-1, -2, 1, 3, 4], "YES");
+main(4, [-1, -2, 0, -3, 4], "NO");
