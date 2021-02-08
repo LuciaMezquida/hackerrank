@@ -1,5 +1,7 @@
 "use strict";
 
+//https://www.hackerrank.com/challenges/angry-professor/problem
+
 // Complete the angryProfessor function below.
 function angryProfessor(studentsThreshold, arrivalTime) {
   const canceledClass = "YES";

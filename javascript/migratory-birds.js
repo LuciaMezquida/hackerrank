@@ -1,5 +1,7 @@
 "use strict";
 
+//https://www.hackerrank.com/challenges/migratory-birds/problem
+
 function migratoryBirds(arr) {
   arr = arr.sort();
   const one = arr.filter((item) => item === 1);

@@ -1,5 +1,7 @@
 "use strict";
 
+//https://www.hackerrank.com/challenges/the-birthday-bar/problem
+
 function birthday(s, d, m) {
   let portions = 0;
   for (let i = 0; i < s.length && i + m <= s.length; i++) {

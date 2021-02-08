@@ -1,3 +1,7 @@
+"use strict";
+
+//https://www.hackerrank.com/challenges/sock-merchant/problem
+
 function salesByMatch(n, ar) {
   ar = ar.sort();
   let pairs = 0;

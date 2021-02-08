@@ -1,5 +1,7 @@
 "use strict";
 
+//https://www.hackerrank.com/challenges/divisible-sum-pairs/problem
+
 function divisibleSumPairs(n, k, ar) {
   let counter = 0;
   for (let i = 0; i < ar.length; i++) {

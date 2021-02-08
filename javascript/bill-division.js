@@ -1,5 +1,7 @@
 "use strict";
 
+//https://www.hackerrank.com/challenges/bon-appetit/problem
+
 function bonAppetit(bill, k, b) {
   const sumBill = bill.reduce((a, b) => a + b, 0);
   const annaMustPay = (sumBill - bill[k]) / 2;

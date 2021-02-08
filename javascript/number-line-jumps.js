@@ -1,4 +1,5 @@
 "use strict";
+//https://www.hackerrank.com/challenges/kangaroo/problem?utm_campaign=challenge-recommendation&utm_medium=email&utm_source=24-hour-campaign
 const samePossition = "YES";
 const wrongPossition = "NO";
 

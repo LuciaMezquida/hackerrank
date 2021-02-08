@@ -1,5 +1,7 @@
 "use strict";
 
+//https://www.hackerrank.com/challenges/breaking-best-and-worst-records/problem
+
 function breakingRecords(scores) {
   let highestScore = scores[0];
   let lowestScore = scores[0];

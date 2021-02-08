@@ -1,5 +1,7 @@
 "use strict";
 
+//https://www.hackerrank.com/challenges/day-of-the-programmer/problem
+
 function dayOfTheProgrammer(year) {
   let isLeapYear;
   if (year === 1918) {

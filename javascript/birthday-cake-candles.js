@@ -1,14 +1,8 @@
 "use strict";
 
-// Complete the angryProfessor function below.
+//https://www.hackerrank.com/challenges/birthday-cake-candles/problem
+
 function birthdayCakeCandles(candles) {
-  // Write your code here
-  // let maxNum = candles[0];
-  // for (let i = 0; i < candles.length; i++) {
-  //   if (maxNum <= candles[i]) {
-  //     maxNum = candles[i];
-  //   }
-  // }
   const maxNum = Math.max(...candles);
   const tallCandles = candles.filter((a) => a === maxNum);
   return tallCandles.length;
